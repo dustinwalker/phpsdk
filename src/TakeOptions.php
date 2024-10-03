@@ -114,6 +114,14 @@ class TakeOptions
     }
 
     /**
+     * Full page scroll to trigger lazy loaded images
+     */
+    public function fullPageScroll(bool $fullPageScroll)
+    {
+        $this->put("full_page_scroll", $fullPageScroll ? "true" : "false");
+    }
+
+    /**
      * Sets response format, one of: "png", "jpeg", "webp" or "jpg".
      */
     public function format(string $format)
